@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoiceScreen"
+    android:background="@color/yellowish">
+
+    <ImageView
+        android:id="@+id/parent_logo"
+        android:layout_width="192dp"
+        android:layout_height="137dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:src="@drawable/parent" />
+
+    <ImageView
+        android:id="@+id/student_logo"
+        android:layout_width="192dp"
+        android:layout_height="137dp"
+        android:layout_below="@id/parent_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:src="@drawable/student" />
+
+    <ImageView
+        android:id="@+id/warden_logo"
+        android:layout_width="192dp"
+        android:layout_height="137dp"
+        android:src="@drawable/warden"
+        android:layout_below="@id/student_logo"
+        android:layout_marginTop="30sp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/guard_logo"
+        android:layout_width="192dp"
+        android:layout_height="137dp"
+        android:src="@drawable/guard"
+        android:layout_below="@id/warden_logo"
+        android:layout_marginTop="30sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/text_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guard_logo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20sp"
+        android:fontFamily="sans-serif"
+        android:text="Choose your category"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>
